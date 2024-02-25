@@ -1,0 +1,63 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">
+      Services
+
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <h4 class="heading">Filter</h4>
+  <ion-item>
+    <ion-label>Service</ion-label>
+    <ion-select placeholder="ALL"  (ionChange)="onServiceSelect($event)">
+      <ion-select-option value="deco">Deco</ion-select-option>
+      <ion-select-option value="Sound">Sound</ion-select-option>
+      <ion-select-option value="Lights">Lights</ion-select-option>
+      <ion-select-option value="cocktail">cocktail</ion-select-option>
+      <ion-select-option value="chef">chef</ion-select-option>
+      <ion-select-option value="tents">tents</ion-select-option>
+      <ion-select-option value="bouncers">bouncers</ion-select-option>
+    </ion-select>
+  </ion-item>
+  
+  <h4 class="heading">Browse</h4>
+  <ion-list>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="../icon/denwer5-6e8faee4-d24a-42f0-896e-d992c3df1537.gif" alt="">
+      </ion-thumbnail>
+      <ion-label>
+        <h3 class="heading">chef</h3>
+        <p>Raze explodes out of Brazil with her big 
+          personality and big guns.</p>
+          <ion-badge color="dark">chef</ion-badge>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="../icon/4818546-small.png" alt="">
+      </ion-thumbnail>
+      <ion-label>
+        <h3 class="heading">John Doe</h3>
+        <p>Raze explodes out of Brazil with her big 
+          personality and big guns.</p>
+          <ion-badge color="dark">Sound</ion-badge>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="../icon/4818585-small.png" alt="">
+      </ion-thumbnail>
+      <ion-label>
+        <h3 class="heading">Bradon Smith</h3>
+        <p>Raze explodes out of Brazil with her big 
+          personality and big guns.</p>
+          <ion-badge color="dark">Cocktail Mixing</ion-badge>
+      </ion-label>
+    </ion-item>
+
+    </ion-list>
+
+</ion-content>
